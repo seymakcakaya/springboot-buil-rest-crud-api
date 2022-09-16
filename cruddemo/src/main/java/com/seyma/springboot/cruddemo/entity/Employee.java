@@ -6,8 +6,7 @@ import javax.persistence.*;
 @Table(name="employee")
 public class Employee {
 
-	// define fields
-	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
@@ -23,8 +22,7 @@ public class Employee {
 	private String email;
 	
 		
-	// define constructors
-	
+
 	public Employee() {
 		
 	}
@@ -35,8 +33,7 @@ public class Employee {
 		this.email = email;
 	}
 
-	// define getter/setter
-	
+
 	public int getId() {
 		return id;
 	}
@@ -69,7 +66,6 @@ public class Employee {
 		this.email = email;
 	}
 
-	// define tostring
 
 	@Override
 	public String toString() {
